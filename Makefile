@@ -3,5 +3,11 @@ NPM=npm
 install:
 	$(NPM) install
 
-aglio:
-	$(NPM) run aglio
+compile:
+	$(NPM) run compile
+
+server:
+	$(NPM) run server
+
+server/mock:
+	$(NPM) run mock-server
