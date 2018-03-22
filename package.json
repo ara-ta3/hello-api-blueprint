@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile": "aglio -i api.apib -o api.html",
-    "server": "aglio -i api.apib -s",
-    "mock-server": "drakov -f ./api.apib --watch"
+    "docs": "aglio -i api.apib -s",
+    "mock-server": "drakov -f ./api.apib --watch",
+    "dredd": "dredd"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/ara-ta3/hello-api-blueprint#readme",
   "dependencies": {
     "aglio": "^2.3.0",
-    "drakov": "^1.0.4"
+    "drakov": "^1.0.4",
+    "dredd": "^5.1.4"
   }
 }
