@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ara-ta3/hello-api-blueprint/issues"
   },
-  "homepage": "https://github.com/ara-ta3/hello-api-blueprint#readme"
+  "homepage": "https://github.com/ara-ta3/hello-api-blueprint#readme",
+  "dependencies": {
+    "aglio": "^2.3.0"
+  }
 }
