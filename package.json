@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "aglio": "aglio -i api.apib -o api.html"
   },
   "repository": {
     "type": "git",
