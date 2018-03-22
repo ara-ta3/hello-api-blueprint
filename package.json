@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "aglio -i api.apib -o api.html",
     "server": "aglio -i api.apib -s",
-    "mock-server": "drakov -f ./api.apib"
+    "mock-server": "drakov -f ./api.apib --watch"
   },
   "repository": {
     "type": "git",
