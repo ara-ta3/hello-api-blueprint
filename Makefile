@@ -1,5 +1,6 @@
 NPM=npm
 PHP=php
+DOCKER=docker
 
 install:
 	$(NPM) install
@@ -8,7 +9,8 @@ compile:
 	$(NPM) run compile
 
 document:
-	$(NPM) run docs
+	$(DOCKER) run -it --rm -v $(PWD):/doc quay.io/bukalapak/snowboard html -o dist/output.html api.apib
+	$(PHP) -S 127.0.0.1:8080 dist/output.html
 
 server:
 	$(PHP) -S 127.0.0.1:8080 main.php
